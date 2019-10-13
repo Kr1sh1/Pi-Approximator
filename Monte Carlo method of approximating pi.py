@@ -17,10 +17,9 @@ def main():
             n += 1
             if y_point <= sqrt(1 - pow(x_point, 2)):
                 m += 1
-            
-            approx_pi = (Decimal(m*4)/Decimal(n))
         
     except KeyboardInterrupt:
+        approx_pi = (Decimal(m*4)/Decimal(n))
         time_running = int(time() - start_time)
         print(f"Approximate value of pi: {approx_pi}, number of total points: {n}, "
         f"number of points within first quadrant of the circle: {m}, time running: {time_running}s")
