@@ -21,8 +21,8 @@ def main():
     except KeyboardInterrupt:
         approx_pi = (Decimal(m*4)/Decimal(n))
         time_running = int(time() - start_time)
-        print(f"Approximate value of pi: {approx_pi}, number of total points: {n}, "
-        f"number of points within first quadrant of the circle: {m}, time running: {time_running}s")
+        print(f"Approximate value of pi: {approx_pi}\nNumber of total points: {n}\n"
+        f"Number of points within first quadrant of the circle: {m}\nTime running: {time_running}s")
         return
 
 if __name__ == "__main__":
